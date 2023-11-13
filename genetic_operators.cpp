@@ -129,10 +129,10 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
     std::vector<double> probability_vector;
     double probability_sum {0};
     for (const auto& i : population_values) {
-        // probability_vector.push_back( (1.0 / (12600 + i )) / values_sum);
-        // probability_sum += (1.0 / (12600 + i )) / values_sum; for swefels
-        probability_vector.push_back( (1.0 / i ) / values_sum);
-        probability_sum += (1.0 / i ) / values_sum;
+        probability_vector.push_back( (1.0 / (12600 + i )) / values_sum);
+        probability_sum += (1.0 / (12600 + i )) / values_sum;
+        /*probability_vector.push_back( (1.0 / i ) / values_sum);
+        probability_sum += (1.0 / i ) / values_sum;*/
     }
 
     double new_probability_sum {0};
@@ -160,4 +160,4 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
     }
 
     return new_population;
-}
+}// adsfasd

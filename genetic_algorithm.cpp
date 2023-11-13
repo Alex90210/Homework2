@@ -28,4 +28,4 @@ double generic_genetic_algorithm(unsigned population_size, unsigned generations,
     }
 
     return static_cast<double>(*best_solution);
-}
+}// adsfasd
