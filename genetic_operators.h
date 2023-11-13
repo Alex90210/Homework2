@@ -17,5 +17,5 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
                                          const double& epsilon, const unsigned& number_of_dimensions,
                                          double (*calculate_function)(const std::vector<double>& vec));
 void crossover(std::vector<std::vector<bool>>& population);
-// adsfasd
+
 #endif

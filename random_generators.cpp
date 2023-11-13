@@ -40,7 +40,7 @@ std::string random_neighbour(const double& interval_start, const double& interva
     }
 
     return copy_string;
-}// adsfasd
+}
 
 std::string random_neighbour_one_bit(const std::string& binary_string) {
 

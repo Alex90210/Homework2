@@ -1,1 +1,9 @@
-// adsfasd
+rastrigin good combination: 200 generations, 100 chromosomes, mutation = 2 / string size, cross_p = 0.3, random cut point
+
+Mutation p2p: 1
+Crossover prob: 0.6
+Epsilon: 0.0001
+Generations: 200
+Pop size: 100
+michalewicz genetic: -10.5362
+Execution time: 71.14894 seconds

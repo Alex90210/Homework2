@@ -13,4 +13,3 @@ add_executable(Homework2 main.cpp
         genetic_algorithm.h
         genetic_operators.cpp
         genetic_operators.h)
-

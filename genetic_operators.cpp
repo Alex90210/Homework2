@@ -2,8 +2,17 @@
 #include "genetic_operators.h"
 
 void mutation(std::vector<std::vector<bool>>& population) {
+
+    const static double p2p {1.0};
+
+    static bool message_printed = false;
+    if (!message_printed) {
+        std::cout << "Mutation p2p: " << p2p << std::endl;
+        message_printed = true;
+    }
+
     // this is a good start, try: 0.1/L, 2/L, 4/L
-    double mutation_probability = 2.0 / population.at(0).size();
+    double mutation_probability = p2p / population.at(0).size();
     for (size_t i {0}; i < population.size(); ++i) {
         for (size_t j {0}; j < population[i].size(); ++j) {
             if (get_random_double(0, 1) <= mutation_probability)
@@ -81,7 +90,13 @@ void crossover(std::vector<std::vector<bool>>& population) {
     // don't use crossover more than 1 time for a parent in a single generation
     // crossover probability 30% - 80%
 
-    static const double crossover_probability{ 0.3 };
+    static const double crossover_probability {0.6};
+    static bool message_printed = false;
+
+    if (!message_printed) {
+        std::cout << "Crossover prob: " << crossover_probability << std::endl;
+        message_printed = true;
+    }
 
     for (size_t i{ 0 }; i < population.size(); ++i) {
         if (get_random_double(0, 1) <= crossover_probability) {
@@ -129,8 +144,8 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
     std::vector<double> probability_vector;
     double probability_sum {0};
     for (const auto& i : population_values) {
-        probability_vector.push_back( (1.0 / (12600 + i )) / values_sum);
-        probability_sum += (1.0 / (12600 + i )) / values_sum;
+        probability_vector.push_back( (1.0 / (40 + i )) / values_sum);
+        probability_sum += (1.0 / (40 + i )) / values_sum;
         /*probability_vector.push_back( (1.0 / i ) / values_sum);
         probability_sum += (1.0 / i ) / values_sum;*/
     }
@@ -160,4 +175,4 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
     }
 
     return new_population;
-}// adsfasd
+}

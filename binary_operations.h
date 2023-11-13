@@ -5,7 +5,7 @@
 #include <string>
 #include <random>
 #include <chrono>
-// sas
+
 unsigned dim_binary_length(const double& interval_start, const double& interval_end, double epsilon);
 unsigned binary_to_decimal(const std::vector<bool>& binary_string, const size_t& string_start, const size_t& string_end);
 std::vector<bool> generate_binary_string(const double& interval_start, const double& interval_end, double epsilon, unsigned number_of_dimensions);

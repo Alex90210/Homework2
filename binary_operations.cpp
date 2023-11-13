@@ -67,7 +67,7 @@ std::vector<std::vector<bool>> generate_population(const unsigned& population_si
 
     return generated_population;
 }
-// sas
+
 std::vector<double> evaluate_population(const std::vector<std::vector<bool>>& population,
                                         const double& interval_start, const double& interval_end,
                                         const double& epsilon, const unsigned& number_of_dimensions,

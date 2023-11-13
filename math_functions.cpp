@@ -29,4 +29,4 @@ double michalewiczs_function(const std::vector<double>& vec) {
         sum += sin(vec[i]) * pow(sin((i + 1) * vec[i] * vec[i] / M_PI), 20.0);
     }
     return -sum;
-}// adsfasd
+}
