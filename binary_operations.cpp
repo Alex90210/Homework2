@@ -77,7 +77,7 @@ std::vector<double> evaluate_population(const std::vector<std::vector<bool>>& po
     // this will work for minimizing pozitive functions (i.e. rastrigin)
     for (const auto& i : population) {
         std::vector<double> chromosome_values_for_each_dim = decode_binary_string(interval_start, interval_end, epsilon, number_of_dimensions, i);
-        population_value.push_back(calculate_function(chromosome_values_for_each_dim));
+        population_value.push_back((calculate_function(chromosome_values_for_each_dim)));
     }
 
     return population_value;

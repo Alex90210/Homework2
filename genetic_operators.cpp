@@ -30,7 +30,7 @@ void crossover(std::vector<std::vector<bool>>& population) {
                     // now crossover can happen
                     // between pop[i] and pop[j]
 
-                    unsigned chromosome_cut_point = get_random_unsigned(0, population[i].size() - 1);
+                    unsigned chromosome_cut_point = get_random_unsigned(1, population[i].size() - 1);
                     // maybe I should create a new population vector
 
                     // this will keep only the children
@@ -65,10 +65,10 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
         values_sum += i;
     }
 
-// individual probability
+    // individual probability
     std::vector<double> probability_vector;
     for (auto& i : population_values) {
-        probability_vector.push_back(1.0 / (std::abs(i) / values_sum));
+        probability_vector.push_back( (1.0 / (12600 + i)) / values_sum);
     }
 
 

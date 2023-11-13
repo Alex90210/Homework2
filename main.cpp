@@ -7,11 +7,11 @@ int main() {
 
     double interval_start {-500};
     double interval_end {500};
-    double epsilon {0.001};
+    double epsilon {0.0001};
 
     unsigned number_of_dimensions {30};
-    unsigned population_size {50};
-    unsigned generations{1000};
+    unsigned population_size {100};
+    unsigned generations{100};
 
     auto start_time = std::chrono::high_resolution_clock::now();
 
