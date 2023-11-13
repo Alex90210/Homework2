@@ -2,7 +2,7 @@
 
 void mutation(std::vector<std::vector<bool>>& population) {
     // this is a good start, try: 0.1/L, 2/L, 4/L
-    double mutation_probability = 1.0 / population.at(0).size();
+    double mutation_probability = 2.0 / population.at(0).size();
     for (size_t i {0}; i < population.size(); ++i) {
         for (size_t j {0}; j < population[i].size(); ++j) {
             if (get_random_double(0, 1) <= mutation_probability)
@@ -67,10 +67,18 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
 
     // individual probability
     std::vector<double> probability_vector;
+    double probability_sum {0};
     for (auto& i : population_values) {
-        probability_vector.push_back( (1.0 / (12600 + i)) / values_sum);
+        probability_vector.push_back( (1.0 / (12600 + i )) / values_sum);
+        probability_sum += (1.0 / (12600 + i )) / values_sum;
     }
 
+    double new_probability_sum {0};
+    // Normalize probabilities
+    for (auto& probability : probability_vector) {
+        probability /= probability_sum;
+        new_probability_sum += probability;
+    }
 
     // accumulated probability
     double sum{0}; // I probably could very easily modify the first vector

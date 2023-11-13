@@ -7,7 +7,7 @@ int main() {
 
     double interval_start {-500};
     double interval_end {500};
-    double epsilon {0.0001};
+    double epsilon {0.001};
 
     unsigned number_of_dimensions {30};
     unsigned population_size {100};
