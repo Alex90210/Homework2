@@ -18,11 +18,11 @@ double get_random_double(double min, double max) {
     return distribution(eng);
 }
 
-int select_index(const std::vector<double>& cumulativeProbabilities) {
+int select_index(const std::vector<double>& cumulative_probabilities) {
     double randomValue = get_random_double(0, 1);
 
-    auto it = std::lower_bound(cumulativeProbabilities.begin(), cumulativeProbabilities.end(), randomValue);
-    int selectedIndex = std::distance(cumulativeProbabilities.begin(), it);
+    auto it = std::lower_bound(cumulative_probabilities.begin(), cumulative_probabilities.end(), randomValue);
+    int selectedIndex = std::distance(cumulative_probabilities.begin(), it);
 
     return selectedIndex;
 }

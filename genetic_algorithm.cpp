@@ -17,6 +17,7 @@ double generic_genetic_algorithm(unsigned population_size, unsigned generations,
         ++current_generation;
         population = selection(population, population_size, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function);
         mutation(population);
+        //crossover(population, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function);
         crossover(population);
 
         pop_values = evaluate_population(population, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function);
