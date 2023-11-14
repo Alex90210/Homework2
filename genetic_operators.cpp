@@ -3,7 +3,7 @@
 
 void mutation(std::vector<std::vector<bool>>& population) {
 
-    const static double p2p {1.0};
+    const static double p2p {2.0};
 
     static bool message_printed = false;
     if (!message_printed) {
@@ -90,7 +90,7 @@ void crossover(std::vector<std::vector<bool>>& population) {
     // don't use crossover more than 1 time for a parent in a single generation
     // crossover probability 30% - 80%
 
-    static const double crossover_probability {0.6};
+    static const double crossover_probability {0.3};
     static bool message_printed = false;
 
     if (!message_printed) {
@@ -144,10 +144,10 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
     std::vector<double> probability_vector;
     double probability_sum {0};
     for (const auto& i : population_values) {
-        probability_vector.push_back( (1.0 / (40 + i )) / values_sum);
-        probability_sum += (1.0 / (40 + i )) / values_sum;
-        /*probability_vector.push_back( (1.0 / i ) / values_sum);
-        probability_sum += (1.0 / i ) / values_sum;*/
+        /*probability_vector.push_back( (1.0 / (40 + i )) / values_sum);
+        probability_sum += (1.0 / (40 + i )) / values_sum;*/
+        probability_vector.push_back( (1.0 / i ) / values_sum);
+        probability_sum += (1.0 / i ) / values_sum;
     }
 
     double new_probability_sum {0};

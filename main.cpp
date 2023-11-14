@@ -5,8 +5,8 @@
 
 int main() {
 
-    double interval_start {0};
-    double interval_end {M_PI};
+    double interval_start {-5.12};
+    double interval_end {5.12};
     double epsilon {0.0001};
 
     unsigned number_of_dimensions {30};
@@ -16,7 +16,7 @@ int main() {
     auto start_time = std::chrono::high_resolution_clock::now();
 
     double test = generic_genetic_algorithm(population_size, generations, interval_start, interval_end,
-                                            epsilon, number_of_dimensions, michalewiczs_function);
+                                            epsilon, number_of_dimensions, rastrigins_function);
 
     auto end_time = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end_time - start_time).count();
@@ -25,7 +25,7 @@ int main() {
     std::cout << "Generations: " << generations << std::endl;
     std::cout << "Pop size: " << population_size << std::endl;
 
-    std::cout << "michalewicz genetic: " << test << std::endl;
+    std::cout << "rastrigin genetic: " << test << std::endl;
     std::cout << std::fixed << std::setprecision(5);
     std::cout << "Execution time: " << duration << " seconds" << std::endl;
 
