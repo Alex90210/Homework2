@@ -1,0 +1,13 @@
+auto start_time = std::chrono::high_resolution_clock::now();
+auto end_time = std::chrono::high_resolution_clock::now();
+auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end_time - start_time).count();
+std::cout << "Evaluate execution time: " << duration << " seconds" << std::endl;
+
+
+Selection execution time: 0.0015297 seconds
+
+Crossover execution time: 0.0178989 seconds
+but after i = j; continue;
+Crossover execution time: 0.0015207 seconds
+
+Mutation execution time: 0.343959 seconds ??????

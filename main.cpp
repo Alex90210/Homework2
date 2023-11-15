@@ -10,23 +10,25 @@ int main() {
     double epsilon {0.0001};
 
     unsigned number_of_dimensions {30};
-    unsigned population_size {100};
-    unsigned generations {200};
+    unsigned population_size {200};
+    unsigned generations {500};
 
     auto start_time = std::chrono::high_resolution_clock::now();
 
     double test = generic_genetic_algorithm(population_size, generations, interval_start, interval_end,
                                             epsilon, number_of_dimensions, rastrigins_function);
 
-    auto end_time = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end_time - start_time).count();
+
 
     std::cout << "Epsilon: " << epsilon << std::endl;
     std::cout << "Generations: " << generations << std::endl;
     std::cout << "Pop size: " << population_size << std::endl;
 
-    std::cout << "rastrigin genetic: " << test << std::endl;
     std::cout << std::fixed << std::setprecision(5);
+    std::cout << "rastrigin genetic: " << test << std::endl;
+
+    auto end_time = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end_time - start_time).count();
     std::cout << "Execution time: " << duration << " seconds" << std::endl;
 
     return 0;

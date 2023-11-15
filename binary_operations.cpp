@@ -9,7 +9,7 @@ unsigned dim_binary_length(const double& interval_start, const double& interval_
 std::vector<bool> generate_binary_string(const double& interval_start, const double& interval_end, double epsilon, unsigned number_of_dimensions) {
 
     std::random_device rd;
-    std::mt19937 gen(rd());
+    std::mt19937_64 gen(rd());
     std::uniform_int_distribution<> dis(0, 1);
 
     unsigned pow_epsilon = 1 / epsilon;

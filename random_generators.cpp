@@ -1,19 +1,19 @@
 #include "random_generators.h"
 
 unsigned get_random_unsigned(unsigned min, unsigned max) {
-    auto seed = std::chrono::high_resolution_clock::now().time_since_epoch().count();
-    std::mt19937 eng(seed);
+    static std::random_device rd;
+    static std::mt19937_64 eng(rd());
 
-    std::uniform_int_distribution<> distribution(min, max);
+    std::uniform_int_distribution<unsigned> distribution(min, max);
 
     return distribution(eng);
 }
 
 double get_random_double(double min, double max) {
-    std::random_device rd;
-    std::mt19937 eng(rd());
+    static std::random_device rd;
+    static std::mt19937_64 eng(rd());
 
-    std::uniform_real_distribution<> distribution(min, max);
+    std::uniform_real_distribution<double> distribution(min, max);
 
     return distribution(eng);
 }

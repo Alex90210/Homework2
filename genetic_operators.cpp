@@ -3,7 +3,7 @@
 
 void mutation(std::vector<std::vector<bool>>& population) {
 
-    const static double p2p {2.0};
+    const static double p2p {1.0};
 
     static bool message_printed = false;
     if (!message_printed) {
@@ -19,6 +19,7 @@ void mutation(std::vector<std::vector<bool>>& population) {
                 population[i][j] = ~population[i][j];
         }
     }
+
 }
 
 // this variant will only keep the children and do "crossover" only with parents after the i parent
@@ -90,7 +91,7 @@ void crossover(std::vector<std::vector<bool>>& population) {
     // don't use crossover more than 1 time for a parent in a single generation
     // crossover probability 30% - 80%
 
-    static const double crossover_probability {0.3};
+    static const double crossover_probability {0.8};
     static bool message_printed = false;
 
     if (!message_printed) {
@@ -106,7 +107,6 @@ void crossover(std::vector<std::vector<bool>>& population) {
                     // between pop[i] and pop[j]
 
                     unsigned chromosome_cut_point = get_random_unsigned(1, population[i].size() - 1);
-                    // maybe I should create a new population vector
 
                     // this will keep only the children
                     for (size_t k = chromosome_cut_point; k < population[i].size(); ++k) {
@@ -114,6 +114,9 @@ void crossover(std::vector<std::vector<bool>>& population) {
                         population[i][k] = population[j][k];
                         population[j][k] = temp;
                     }
+                    // not sure about this
+                    i = j;
+                    continue;
                 }
             }
         }
@@ -125,14 +128,9 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
                const double& epsilon, const unsigned& number_of_dimensions,
                double (*calculate_function)(const std::vector<double>& vec)) {
 
-    // 1. assign a value for each chromosome
-    // this will only work for positive functions: de jong 1, rastrigin: f_value = 1 / f(x)
-    // if the function is negative: constant - f(x)
-
     // evaluate P
     std::vector<double> population_values = evaluate_population(population, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function);
 
-    // I don't really know how to apply the first step correction
 
     // total fitness
     double values_sum {0};
@@ -144,8 +142,8 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
     std::vector<double> probability_vector;
     double probability_sum {0};
     for (const auto& i : population_values) {
-        /*probability_vector.push_back( (1.0 / (40 + i )) / values_sum);
-        probability_sum += (1.0 / (40 + i )) / values_sum;*/
+        /*probability_vector.push_back( (1.0 / (12600 + i )) / values_sum);
+        probability_sum += (1.0 / (12600 + i )) / values_sum;*/
         probability_vector.push_back( (1.0 / i ) / values_sum);
         probability_sum += (1.0 / i ) / values_sum;
     }
@@ -173,6 +171,7 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
         int index = select_index(accumulated_probability_vector);
         new_population.push_back(population[index]);
     }
+
 
     return new_population;
 }
