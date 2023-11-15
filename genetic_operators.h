@@ -7,15 +7,19 @@
 #include <algorithm>
 #include <map>
 
-void mutation(std::vector<std::vector<bool>>& population);
+void mutation(std::vector<std::vector<bool>>& population, const double& mutation_f, const unsigned& string_len);
 /*void crossover(std::vector<std::vector<bool>>& population,
                const double& interval_start, const double& interval_end,
                const double& epsilon, const unsigned& number_of_dimensions,
                double (*calculate_function)(const std::vector<double>& vec));*/
-std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& population, unsigned population_size,
-                                         const double& interval_start, const double& interval_end,
-                                         const double& epsilon, const unsigned& number_of_dimensions,
-                                         double (*calculate_function)(const std::vector<double>& vec));
-void crossover(std::vector<std::vector<bool>>& population);
+std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& population,
+                                         unsigned population_size,
+                                         const double& interval_start,
+                                         const double& interval_end,
+                                         const double& epsilon,
+                                         const unsigned& number_of_dimensions,
+                                         double (*calculate_function)(const std::vector<double>& vec),
+                                         size_t k);
+void crossover(std::vector<std::vector<bool>>& population, const double& crossover_probability);
 
 #endif

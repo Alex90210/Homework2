@@ -1,8 +1,10 @@
 #include "random_generators.h"
 
+// using static std::random device is mandatory for effective speed
+
 unsigned get_random_unsigned(unsigned min, unsigned max) {
     static std::random_device rd;
-    static std::mt19937_64 eng(rd());
+    static std::mt19937 eng(rd());
 
     std::uniform_int_distribution<unsigned> distribution(min, max);
 
@@ -11,7 +13,7 @@ unsigned get_random_unsigned(unsigned min, unsigned max) {
 
 double get_random_double(double min, double max) {
     static std::random_device rd;
-    static std::mt19937_64 eng(rd());
+    static std::mt19937 eng(rd());
 
     std::uniform_real_distribution<double> distribution(min, max);
 

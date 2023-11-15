@@ -5,31 +5,37 @@
 
 int main() {
 
-    double interval_start {-5.12};
-    double interval_end {5.12};
-    double epsilon {0.0001};
-
+    double interval_start {0};
+    double interval_end {M_PI};
+    double epsilon {0.001};
     unsigned number_of_dimensions {30};
+    unsigned string_len = dim_binary_length(interval_start, interval_end, epsilon) * number_of_dimensions;
+
     unsigned population_size {200};
     unsigned generations {500};
-
-    auto start_time = std::chrono::high_resolution_clock::now();
-
-    double test = generic_genetic_algorithm(population_size, generations, interval_start, interval_end,
-                                            epsilon, number_of_dimensions, rastrigins_function);
-
-
+    double mutation_f {0.5};
+    double crossover_probability {0.8};
 
     std::cout << "Epsilon: " << epsilon << std::endl;
     std::cout << "Generations: " << generations << std::endl;
     std::cout << "Pop size: " << population_size << std::endl;
 
-    std::cout << std::fixed << std::setprecision(5);
-    std::cout << "rastrigin genetic: " << test << std::endl;
+    for (size_t i{0}; i < 30; ++i) {
+        auto start_time = std::chrono::high_resolution_clock::now();
 
-    auto end_time = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end_time - start_time).count();
-    std::cout << "Execution time: " << duration << " seconds" << std::endl;
+
+        double test = generic_genetic_algorithm(population_size, generations, interval_start, interval_end,
+                                                epsilon, number_of_dimensions, string_len,
+                                                mutation_f, crossover_probability,
+                                                michalewiczs_function);
+
+        std::cout << std::fixed << std::setprecision(5);
+        std::cout << "michalewicz genetic: " << test << std::endl;
+
+        auto end_time = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end_time - start_time).count();
+        std::cout << "Execution time: " << duration << " seconds" << std::endl;
+    }
 
     return 0;
 }
