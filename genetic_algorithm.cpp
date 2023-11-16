@@ -13,13 +13,15 @@ double generic_genetic_algorithm(unsigned population_size, unsigned generations,
     auto best_solution = std::min_element(pop_values.begin(), pop_values.end());
 
     unsigned current_generation {0};
-    unsigned k {0};
+    unsigned k {0}; // elitism works well for schwefels, i should modify the crossover function too
     while (current_generation < generations) {
 
         ++current_generation;
         population = selection(population, population_size, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function, k);
         mutation(population, mutation_f, string_len);
-        //crossover(population, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function);
+
+        // crossover_keep_best(population, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function);
+
         crossover(population, crossover_probability);
 
         pop_values = evaluate_population(population, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function);
@@ -27,7 +29,6 @@ double generic_genetic_algorithm(unsigned population_size, unsigned generations,
         if (*new_best_solution < *best_solution) {
             best_solution = new_best_solution;
         }
-
     }
 
     return static_cast<double>(*best_solution);
