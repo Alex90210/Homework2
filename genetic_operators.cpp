@@ -101,6 +101,47 @@ void crossover(std::vector<std::vector<bool>>& population, const double& crossov
     }
 }
 
+void crossover_the_best(std::vector<std::vector<bool>>& population, const double& crossover_probability,
+               const double& interval_start, const double& interval_end,
+               const double& epsilon, const unsigned& number_of_dimensions,
+               double (*calculate_function)(const std::vector<double>& vec)) {
+
+    static bool message_printed {false};
+
+    if (!message_printed) {
+        std::cout << "Crossover prob: " << crossover_probability << std::endl;
+        message_printed = true;
+    }
+
+    // Evaluate P
+    std::vector<double> population_values = evaluate_population(population, interval_start, interval_end, epsilon, number_of_dimensions, calculate_function);
+
+    // Sort chromosomes based on values
+    std::vector<std::size_t> sorted_indices(population.size());
+    std::iota(sorted_indices.begin(), sorted_indices.end(), 0);
+    std::sort(sorted_indices.begin(), sorted_indices.end(), [&population_values](std::size_t i, std::size_t j) {
+        return population_values[i] < population_values[j];
+    });
+
+    for (std::size_t i = 0; i + 1 < sorted_indices.size(); i += 2) {
+        // Select two parents for crossover
+        std::vector<bool>& parent1 = population[sorted_indices[i]];
+        std::vector<bool>& parent2 = population[sorted_indices[i + 1]];
+
+        // Perform crossover with a certain probability
+        if (get_random_double(0, 1) <= crossover_probability) {
+            // Perform crossover logic here, for example, one-point crossover
+            std::size_t crossover_point = get_random_unsigned(0, parent1.size() - 1);
+
+            for (std::size_t k = crossover_point; k < parent1.size(); ++k) {
+                bool temp = parent1[k];
+                parent1[k] = parent2[k];
+                parent2[k] = temp;
+            }
+        }
+    }
+}
+
 void scale_values(std::vector<double>& values, double min, double max) {
     double currentMin = *std::min_element(values.begin(), values.end());
     double currentMax = *std::max_element(values.begin(), values.end());
@@ -150,8 +191,7 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
     // Increase selection pressure
     // this works really well for michawelicz but very bad for schwefels
     scale_values(population_values, 1.0, 2.0);
-    raise_to_power(population_values, 2.0); // 10 works well for michalewicz
-
+    raise_to_power(population_values, 0.6); // 10 works well for michalewicz
     // Perform elitism and get the k best chromosomes
     std::vector<std::vector<bool>> elite_population = elitism(population, population_values, k);
 
@@ -161,9 +201,8 @@ std::vector<std::vector<bool>> selection(const std::vector<std::vector<bool>>& p
     // Individual probability
     std::vector<double> probability_vector;
     for (const auto& i : population_values) {
-        /*probability_vector.push_back((1.0 / (12600 + i)) / values_sum);*/
-        probability_vector.push_back( (1.0 / i + epsilon) / values_sum); // g min is in 0
-        //probability_vector.push_back( i / values_sum);
+        /*probability_vector.push_back((1.0 / (12570 + i)) / values_sum);*/
+        probability_vector.push_back((1.0 / (i + 0.000001)) / values_sum);
     }
 
     // Normalize probabilities

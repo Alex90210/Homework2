@@ -11,16 +11,7 @@ unsigned get_random_unsigned(unsigned min, unsigned max) {
     return distribution(eng);
 }
 
-double get_random_double(double min, double max) { // this is way slower
-    static std::random_device rd;
-    static std::mt19937_64 eng(rd());
-
-    std::uniform_real_distribution<double> distribution(min, max);
-
-    return distribution(eng);
-}
-
-/*double get_random_double(double min, double max) { // WAY FASTER
+double get_random_double(double min, double max) { // WAY FASTER
     static bool initialized = false;
 
     if (!initialized) {
@@ -30,6 +21,26 @@ double get_random_double(double min, double max) { // this is way slower
 
     double random_normalized = static_cast<double>(std::rand()) / RAND_MAX;
     return min + random_normalized * (max - min);
+}
+
+/*double get_random_double(double min, double max) { // this is way slower
+    static std::random_device rd;
+    static std::mt19937_64 eng(rd());
+
+    std::uniform_real_distribution<double> distribution(min, max);
+
+    return distribution(eng);
+}*/
+
+/*unsigned get_random_unsigned(unsigned min, unsigned max) {
+    static bool initialized = false;
+
+    if (!initialized) {
+        std::srand(static_cast<unsigned>(std::time(0)));
+        initialized = true;
+    }
+
+    return min + std::rand() % (max - min + 1);
 }*/
 
 int select_index(const std::vector<double>& cumulative_probabilities) {

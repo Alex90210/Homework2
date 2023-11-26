@@ -13,6 +13,10 @@ void mutation(std::vector<std::vector<bool>>& population, const double& mutation
                const double& epsilon, const unsigned& number_of_dimensions,
                double (*calculate_function)(const std::vector<double>& vec));*/
 void crossover(std::vector<std::vector<bool>>& population, const double& crossover_probability);
+void crossover_the_best(std::vector<std::vector<bool>>& population, const double& crossover_probability,
+               const double& interval_start, const double& interval_end,
+               const double& epsilon, const unsigned& number_of_dimensions,
+               double (*calculate_function)(const std::vector<double>& vec));
 void crossover_keep_best(std::vector<std::vector<bool>>& population,
                          const double& interval_start, const double& interval_end,
                          const double& epsilon, const unsigned& number_of_dimensions,

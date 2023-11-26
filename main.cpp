@@ -7,14 +7,14 @@ int main() {
 
     double interval_start {-5.12};
     double interval_end {5.12};
-    double epsilon {0.001};
-    unsigned number_of_dimensions {30};
+    double epsilon {0.0001};
+    unsigned number_of_dimensions {50};
     unsigned string_len = dim_binary_length(interval_start, interval_end, epsilon) * number_of_dimensions;
 
     unsigned population_size {200};
-    unsigned generations {1500};
-    double mutation_f {1.0};
-    double crossover_probability {0.8};
+    unsigned generations {300};
+    double mutation_f {10.0};
+    double crossover_probability {1.0};
 
     std::cout << "Epsilon: " << epsilon << std::endl;
     std::cout << "Generations: " << generations << std::endl;

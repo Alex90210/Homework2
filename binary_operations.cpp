@@ -6,10 +6,32 @@ unsigned dim_binary_length(const double& interval_start, const double& interval_
     return dim_number_of_bits;
 }
 
+
+std::vector<bool> binaryToGray(const std::vector<bool>& binaryVector, const double& interval_start,
+                               const double& interval_end, const double& epsilon,
+                               unsigned number_of_dimensions) {
+
+    std::vector<bool> grayVector;
+    grayVector.push_back(binaryVector[0]);
+
+    unsigned dim_len = dim_binary_length(interval_start, interval_end, epsilon);
+
+    for(size_t i {0}; i < number_of_dimensions; ++i) {
+        for (size_t i = {dim_len}; i < dim_len * (i + 1); ++i) {
+            std::vector<bool> temp;
+            temp.push_back(binaryVector[i - 1] ^ binaryVector[i]);
+        }
+        grayVector.insert(); // complete the insertion
+    }
+
+    return grayVector;
+    // finish this and them implement the gray to binary
+}
+
 std::vector<bool> generate_binary_string(const double& interval_start, const double& interval_end, double epsilon, unsigned number_of_dimensions) {
 
-    std::random_device rd;
-    std::mt19937_64 gen(rd());
+    static std::random_device rd;
+    static std::mt19937_64 gen(rd());
     std::uniform_int_distribution<> dis(0, 1);
 
     unsigned pow_epsilon = 1 / epsilon;
@@ -21,6 +43,8 @@ std::vector<bool> generate_binary_string(const double& interval_start, const dou
         generated_string.push_back(dis(gen) != 0);
     }
 
+    /*std::vector<bool> gray_vec = binaryToGray(generated_string);
+    return gray_vec;*/
     return generated_string;
 }
 
@@ -35,15 +59,21 @@ unsigned binary_to_decimal(const std::vector<bool>& binary_string, const size_t&
     return decimal_value;
 }
 
-std::vector<double> decode_binary_string(const double& interval_start, const double& interval_end, double epsilon, unsigned number_of_dimensions, const std::vector<bool>& binary_string) {
+std::vector<double> decode_binary_string(const double& interval_start, const double& interval_end,
+                                         double epsilon, unsigned number_of_dimensions,
+                                         const std::vector<bool>& binary_string) {
 
     // x will be between 0 and 2^n - 1, n is the length of the binary string
-    std::vector <double> dimensional_values;
     unsigned dim_length = dim_binary_length(interval_start, interval_end, epsilon);
+
+    // implement gray to binary conversion
+
+    std::vector <double> dimensional_values;
 
     for (size_t i {0}; i < number_of_dimensions; ++i) {
 
         unsigned xb_value = binary_to_decimal(binary_string, dim_length * i, dim_length * (i + 1));
+        //unsigned xb_value = gray_to_double(binary_string, dim_length * i, dim_length * (i + 1));
         double x_value = xb_value / (pow(2, dim_length) - 1);
 
         x_value *= (interval_end - interval_start);
