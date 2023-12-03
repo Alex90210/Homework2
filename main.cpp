@@ -7,20 +7,20 @@ int main() {
 
     double interval_start {-5.12};
     double interval_end {5.12};
-    double epsilon {0.0001};
+    double epsilon {0.00001}; // 0.00001 for rastrigin
     unsigned number_of_dimensions {50};
     unsigned string_len = dim_binary_length(interval_start, interval_end, epsilon) * number_of_dimensions;
 
     unsigned population_size {200};
     unsigned generations {300};
-    double mutation_f {10.0};
-    double crossover_probability {1.0};
+    double mutation_f {12.0}; // 12 for rastrigin
+    double crossover_probability {1.0}; // 1 for rastrigin
 
     std::cout << "Epsilon: " << epsilon << std::endl;
     std::cout << "Generations: " << generations << std::endl;
     std::cout << "Pop size: " << population_size << std::endl;
 
-    const size_t num_runs = 30;
+    const size_t num_runs {30};
     std::vector<double> test_values;
     std::vector<double> execution_times;
 
@@ -93,7 +93,6 @@ int main() {
 
 /*std::vector<std::vector<bool>> test = generate_population(population_size, interval_start, interval_end, epsilon, number_of_dimensions);
 
-
     int x {1};
     for (const auto& i : test) {
 
@@ -109,4 +108,5 @@ int main() {
     for (const auto& i : test_v) {
         std::cout << "Chromosome " << x++ << " value: "<< i << std::endl;
     }
+}
 */

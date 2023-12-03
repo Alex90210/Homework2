@@ -7,7 +7,7 @@ unsigned dim_binary_length(const double& interval_start, const double& interval_
 }
 
 
-std::vector<bool> binaryToGray(const std::vector<bool>& binaryVector, const double& interval_start,
+/*std::vector<bool> binaryToGray(const std::vector<bool>& binaryVector, const double& interval_start,
                                const double& interval_end, const double& epsilon,
                                unsigned number_of_dimensions) {
 
@@ -26,7 +26,7 @@ std::vector<bool> binaryToGray(const std::vector<bool>& binaryVector, const doub
 
     return grayVector;
     // finish this and them implement the gray to binary
-}
+}*/
 
 std::vector<bool> generate_binary_string(const double& interval_start, const double& interval_end, double epsilon, unsigned number_of_dimensions) {
 
@@ -59,6 +59,17 @@ unsigned binary_to_decimal(const std::vector<bool>& binary_string, const size_t&
     return decimal_value;
 }
 
+void gray_to_binary(std::vector<bool>& string, const double& interval_start, const double& interval_end,
+                    const double& epsilon) {
+
+    unsigned dim_len = dim_binary_length(interval_start, interval_end, epsilon);
+    for (size_t i {0}; i < dim_len; ++i) {
+        for (size_t j {dim_len * i}; j < dim_len * (i + 1); ++j) {
+            string[j] = string[j] ^ string[j - 1];
+        }
+    }
+}
+
 std::vector<double> decode_binary_string(const double& interval_start, const double& interval_end,
                                          double epsilon, unsigned number_of_dimensions,
                                          const std::vector<bool>& binary_string) {
@@ -70,6 +81,8 @@ std::vector<double> decode_binary_string(const double& interval_start, const dou
 
     std::vector <double> dimensional_values;
 
+    /*std::vector<bool> string_copy {binary_string};
+    gray_to_binary(string_copy, interval_start, interval_end, epsilon);*/
     for (size_t i {0}; i < number_of_dimensions; ++i) {
 
         unsigned xb_value = binary_to_decimal(binary_string, dim_length * i, dim_length * (i + 1));
