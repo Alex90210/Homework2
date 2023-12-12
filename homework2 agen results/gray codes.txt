@@ -1,0 +1,6 @@
+RASTRIGIN 30 DIMENSIONS:
+
+since gray codes give very bad results, i am thinking that maybe i have the wrong parameters for 
+this type of encoding.
+
+From an avarage of 0, i got an avrage of 100.

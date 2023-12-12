@@ -1,0 +1,625 @@
+30 DIMENSIONS:
+
+200 POP, 170 KEPT AS ELITES, => 200 population 1 CROSSOVER RATE, 220 GENERATIONS
+12/L MUTATION, RAISED TO 0.6 SELECTION PRESSURE
+
+Epsilon: 1e-05
+Generations: 220
+Pop size: 200
+Mutation p2p: 12
+Crossover prob: 1
+Run 1: rastrigin genetic: 0.00000
+Execution time: 1.91134 seconds
+Run 2: rastrigin genetic: 0.00000
+Execution time: 1.89947 seconds
+Run 3: rastrigin genetic: 0.00000
+Execution time: 1.93019 seconds
+Run 4: rastrigin genetic: 0.00000
+Execution time: 1.90469 seconds
+Run 5: rastrigin genetic: 0.00000
+Execution time: 1.88256 seconds
+Run 6: rastrigin genetic: 0.00000
+Execution time: 1.89019 seconds
+Run 7: rastrigin genetic: 0.00000
+Execution time: 1.88362 seconds
+Run 8: rastrigin genetic: 0.00000
+Execution time: 1.90141 seconds
+Run 9: rastrigin genetic: 0.00000
+Execution time: 1.89500 seconds
+Run 10: rastrigin genetic: 0.00000
+Execution time: 1.88910 seconds
+Run 11: rastrigin genetic: 0.00000
+Execution time: 1.89661 seconds
+Run 12: rastrigin genetic: 0.00000
+Execution time: 1.91416 seconds
+Run 13: rastrigin genetic: 0.00000
+Execution time: 1.88546 seconds
+Run 14: rastrigin genetic: 0.00000
+Execution time: 1.88048 seconds
+Run 15: rastrigin genetic: 0.00000
+Execution time: 1.90805 seconds
+Run 16: rastrigin genetic: 0.00000
+Execution time: 1.88825 seconds
+Run 17: rastrigin genetic: 0.00000
+Execution time: 1.89830 seconds
+Run 18: rastrigin genetic: 0.00000
+Execution time: 1.90297 seconds
+Run 19: rastrigin genetic: 0.00000
+Execution time: 1.91232 seconds
+Run 20: rastrigin genetic: 0.00000
+Execution time: 1.87459 seconds
+Run 21: rastrigin genetic: 0.00000
+Execution time: 1.89082 seconds
+Run 22: rastrigin genetic: 0.00000
+Execution time: 1.89810 seconds
+Run 23: rastrigin genetic: 0.00000
+Execution time: 1.87334 seconds
+Run 24: rastrigin genetic: 0.00000
+Execution time: 1.87930 seconds
+Run 25: rastrigin genetic: 0.00000
+Execution time: 1.89147 seconds
+Run 26: rastrigin genetic: 0.00000
+Execution time: 1.88323 seconds
+Run 27: rastrigin genetic: 0.00000
+Execution time: 1.88556 seconds
+Run 28: rastrigin genetic: 0.00000
+Execution time: 1.88486 seconds
+Run 29: rastrigin genetic: 0.00000
+Execution time: 1.91219 seconds
+Run 30: rastrigin genetic: 0.00000
+Execution time: 1.89543 seconds
+Summary:
+Min test value: 0.00000
+Max test value: 0.00000
+Mean test value: 0.00000
+Median test value: 0.00000
+Standard deviation of test values: 0.00000
+Average execution time: 1.89477 seconds
+Interquartile Range (IQR): 0.00000
+
+50 dimensions:
+
++ 100 generations, => 300 generations
+
+Epsilon: 0.0001
+Generations: 300
+Pop size: 200
+Mutation p2p: 10
+Crossover prob: 1
+Run 1: rastrigin genetic: 0.00724
+Execution time: 3.80467 seconds
+Run 2: rastrigin genetic: 1.23872
+Execution time: 3.79640 seconds
+Run 3: rastrigin genetic: 2.51243
+Execution time: 3.82272 seconds
+Run 4: rastrigin genetic: 9.85094
+Execution time: 3.82060 seconds
+Run 5: rastrigin genetic: 4.94824
+Execution time: 3.83005 seconds
+Run 6: rastrigin genetic: 2.90964
+Execution time: 3.84854 seconds
+Run 7: rastrigin genetic: 0.00028
+Execution time: 3.84712 seconds
+Run 8: rastrigin genetic: 3.87120
+Execution time: 3.86788 seconds
+Run 9: rastrigin genetic: 0.00004
+Execution time: 3.84441 seconds
+Run 10: rastrigin genetic: 0.02142
+Execution time: 3.85280 seconds
+Run 11: rastrigin genetic: 1.30148
+Execution time: 3.87592 seconds
+Run 12: rastrigin genetic: 1.41795
+Execution time: 3.86143 seconds
+Run 13: rastrigin genetic: 6.62920
+Execution time: 3.80169 seconds
+Run 14: rastrigin genetic: 0.00004
+Execution time: 3.82397 seconds
+Run 15: rastrigin genetic: 1.23762
+Execution time: 3.83994 seconds
+Run 16: rastrigin genetic: 1.34432
+Execution time: 3.85646 seconds
+Run 17: rastrigin genetic: 0.00547
+Execution time: 3.84925 seconds
+Run 18: rastrigin genetic: 0.00642
+Execution time: 3.84251 seconds
+Run 19: rastrigin genetic: 0.00002
+Execution time: 3.84049 seconds
+Run 20: rastrigin genetic: 0.00241
+Execution time: 3.92315 seconds
+Run 21: rastrigin genetic: 5.22375
+Execution time: 3.95849 seconds
+Run 22: rastrigin genetic: 1.23700
+Execution time: 3.96988 seconds
+Run 23: rastrigin genetic: 6.18659
+Execution time: 3.99416 seconds
+Run 24: rastrigin genetic: 0.00091
+Execution time: 3.97163 seconds
+Run 25: rastrigin genetic: 0.02669
+Execution time: 3.94957 seconds
+Run 26: rastrigin genetic: 0.01138
+Execution time: 4.02306 seconds
+Run 27: rastrigin genetic: 0.00050
+Execution time: 3.90351 seconds
+Run 28: rastrigin genetic: 0.00054
+Execution time: 3.86914 seconds
+Run 29: rastrigin genetic: 0.00007
+Execution time: 3.88597 seconds
+Run 30: rastrigin genetic: 0.00572
+Execution time: 3.82268 seconds
+Summary:
+Min test value: 0.00002
+Max test value: 9.85094
+Mean test value: 1.66661
+Median test value: 0.02405
+Standard deviation of test values: 2.50054
+Average execution time: 3.87327 seconds
+Interquartile Range (IQR): 2.51153
+
+100 dimensions:
+
+500 population, 425 elites, 1000 generations
+
+Epsilon: 0.0001
+Generations: 1000
+Pop size: 500
+Mutation p2p: 10
+Crossover prob: 1
+Run 1: rastrigin genetic: 0.00003
+Execution time: 61.39784 seconds
+Run 2: rastrigin genetic: 0.00003
+Execution time: 61.81043 seconds
+Run 3: rastrigin genetic: 1.39525
+Execution time: 61.68723 seconds
+Run 4: rastrigin genetic: 1.23623
+Execution time: 61.67612 seconds
+Run 5: rastrigin genetic: 6.32570
+Execution time: 61.56078 seconds
+Run 6: rastrigin genetic: 3.96129
+Execution time: 62.33853 seconds
+Run 7: rastrigin genetic: 3.77550
+Execution time: 61.65018 seconds
+Run 8: rastrigin genetic: 3.70864
+Execution time: 61.32868 seconds
+Run 9: rastrigin genetic: 0.00003
+Execution time: 61.37534 seconds
+Run 10: rastrigin genetic: 0.00003
+Execution time: 61.59057 seconds
+Run 11: rastrigin genetic: 0.00003
+Execution time: 61.78231 seconds
+Run 12: rastrigin genetic: 0.00003
+Execution time: 61.63296 seconds
+Run 13: rastrigin genetic: 0.00003
+Execution time: 61.56806 seconds
+Run 14: rastrigin genetic: 2.47244
+Execution time: 61.53595 seconds
+Run 15: rastrigin genetic: 0.00003
+Execution time: 61.55009 seconds
+Run 16: rastrigin genetic: 19.32462
+Execution time: 61.15086 seconds
+Run 17: rastrigin genetic: 7.39642
+Execution time: 61.35284 seconds
+Run 18: rastrigin genetic: 1.23623
+Execution time: 61.52390 seconds
+Run 19: rastrigin genetic: 0.23490
+Execution time: 61.73929 seconds
+Run 20: rastrigin genetic: 0.00003
+Execution time: 61.08576 seconds
+Run 21: rastrigin genetic: 0.00003
+Execution time: 67.53055 seconds
+Run 22: rastrigin genetic: 3.96336
+Execution time: 61.80451 seconds
+Run 23: rastrigin genetic: 0.00003
+Execution time: 61.79018 seconds
+Run 24: rastrigin genetic: 1.31168
+Execution time: 61.19871 seconds
+Run 25: rastrigin genetic: 0.00003
+Execution time: 61.89048 seconds
+Run 26: rastrigin genetic: 2.47244
+Execution time: 61.68199 seconds
+Run 27: rastrigin genetic: 1.23623
+Execution time: 61.40723 seconds
+Run 28: rastrigin genetic: 0.00003
+Execution time: 61.22406 seconds
+Run 29: rastrigin genetic: 3.70864
+Execution time: 61.55149 seconds
+Run 30: rastrigin genetic: 1.23623
+Execution time: 61.53643 seconds
+Summary:
+Min test value: 0.00003
+Max test value: 19.32462
+Mean test value: 2.16654
+Median test value: 1.23623
+Standard deviation of test values: 3.75308
+Average execution time: 61.76511 seconds
+Interquartile Range (IQR): 3.70861
+
+100 dimensions:
+
+500 population, 425 elites, 500 generations
+
+Epsilon: 0.0001
+Generations: 500
+Pop size: 500
+Mutation p2p: 10
+Crossover prob: 1
+Run 1: rastrigin genetic: 0.20367
+Execution time: 30.34928 seconds
+Run 2: rastrigin genetic: 1.61353
+Execution time: 30.67971 seconds
+Run 3: rastrigin genetic: 1.37058
+Execution time: 31.05357 seconds
+Run 4: rastrigin genetic: 0.25126
+Execution time: 31.31120 seconds
+Run 5: rastrigin genetic: 0.36630
+Execution time: 31.31476 seconds
+Run 6: rastrigin genetic: 4.57889
+Execution time: 31.55352 seconds
+Run 7: rastrigin genetic: 8.57857
+Execution time: 31.01968 seconds
+Run 8: rastrigin genetic: 7.47696
+Execution time: 30.86393 seconds
+Run 9: rastrigin genetic: 4.12862
+Execution time: 31.91198 seconds
+Run 10: rastrigin genetic: 1.30059
+Execution time: 33.99117 seconds
+Run 11: rastrigin genetic: 11.78433
+Execution time: 31.48446 seconds
+Run 12: rastrigin genetic: 4.38614
+Execution time: 30.62771 seconds
+Run 13: rastrigin genetic: 3.53811
+Execution time: 30.58150 seconds
+Run 14: rastrigin genetic: 1.56565
+Execution time: 30.42439 seconds
+Run 15: rastrigin genetic: 0.06052
+Execution time: 30.57432 seconds
+Run 16: rastrigin genetic: 3.89375
+Execution time: 30.51151 seconds
+Run 17: rastrigin genetic: 3.74812
+Execution time: 30.52873 seconds
+Run 18: rastrigin genetic: 0.04044
+Execution time: 30.73776 seconds
+Run 19: rastrigin genetic: 4.93993
+Execution time: 30.67890 seconds
+Run 20: rastrigin genetic: 1.75725
+Execution time: 30.70014 seconds
+Run 21: rastrigin genetic: 3.05174
+Execution time: 30.78239 seconds
+Run 22: rastrigin genetic: 3.84666
+Execution time: 30.86449 seconds
+Run 23: rastrigin genetic: 3.24620
+Execution time: 30.65000 seconds
+Run 24: rastrigin genetic: 0.08669
+Execution time: 30.40530 seconds
+Run 25: rastrigin genetic: 1.50968
+Execution time: 30.58492 seconds
+Run 26: rastrigin genetic: 3.11455
+Execution time: 30.66072 seconds
+Run 27: rastrigin genetic: 0.11341
+Execution time: 30.81149 seconds
+Run 28: rastrigin genetic: 1.56800
+Execution time: 30.67737 seconds
+Run 29: rastrigin genetic: 0.04667
+Execution time: 30.99887 seconds
+Run 30: rastrigin genetic: 0.24675
+Execution time: 32.61987 seconds
+Summary:
+Min test value: 0.04044
+Max test value: 11.78433
+Mean test value: 2.74712
+Median test value: 1.68539
+Standard deviation of test values: 2.74757
+Average execution time: 30.99845 seconds
+Interquartile Range (IQR): 3.64248
+
+100 dimensions:
+
+500 population, 425 elites, 400 generations
+
+C:\SEM3\AGen\Homework2\cmake-build-debug\Homework2.exe
+Epsilon: 0.0001
+Generations: 400
+Pop size: 500
+Mutation p2p: 10
+Crossover prob: 1
+Run 1: rastrigin genetic: 3.52829
+Execution time: 25.64418 seconds
+Run 2: rastrigin genetic: 1.70629
+Execution time: 25.92207 seconds
+Run 3: rastrigin genetic: 8.68310
+Execution time: 25.04844 seconds
+Run 4: rastrigin genetic: 1.04875
+Execution time: 24.74163 seconds
+Run 5: rastrigin genetic: 5.36765
+Execution time: 24.38118 seconds
+Run 6: rastrigin genetic: 3.40725
+Execution time: 25.62897 seconds
+Run 7: rastrigin genetic: 9.42142
+Execution time: 25.13388 seconds
+Run 8: rastrigin genetic: 1.63676
+Execution time: 25.65376 seconds
+Run 9: rastrigin genetic: 4.70430
+Execution time: 25.89066 seconds
+Run 10: rastrigin genetic: 1.01984
+Execution time: 24.37918 seconds
+Run 11: rastrigin genetic: 3.62332
+Execution time: 24.25198 seconds
+Run 12: rastrigin genetic: 10.43618
+Execution time: 24.37380 seconds
+Run 13: rastrigin genetic: 5.29842
+Execution time: 24.09453 seconds
+Run 14: rastrigin genetic: 7.12507
+Execution time: 24.78672 seconds
+Run 15: rastrigin genetic: 5.45672
+Execution time: 25.68174 seconds
+Run 16: rastrigin genetic: 5.09024
+Execution time: 25.76645 seconds
+Run 17: rastrigin genetic: 8.88814
+Execution time: 25.35069 seconds
+Run 18: rastrigin genetic: 5.40026
+Execution time: 25.41709 seconds
+Run 19: rastrigin genetic: 12.93982
+Execution time: 25.43238 seconds
+Run 20: rastrigin genetic: 10.07777
+Execution time: 25.32277 seconds
+Run 21: rastrigin genetic: 3.41613
+Execution time: 25.62735 seconds
+Run 22: rastrigin genetic: 0.72563
+Execution time: 25.68058 seconds
+Run 23: rastrigin genetic: 5.63452
+Execution time: 26.26930 seconds
+Run 24: rastrigin genetic: 5.54102
+Execution time: 26.46035 seconds
+Run 25: rastrigin genetic: 2.58954
+Execution time: 25.31891 seconds
+Run 26: rastrigin genetic: 6.44210
+Execution time: 25.38845 seconds
+Run 27: rastrigin genetic: 3.96628
+Execution time: 25.63272 seconds
+Run 28: rastrigin genetic: 3.50256
+Execution time: 25.34414 seconds
+Run 29: rastrigin genetic: 6.72219
+Execution time: 25.47493 seconds
+Run 30: rastrigin genetic: 1.42608
+Execution time: 25.53169 seconds
+Summary:
+Min test value: 0.72563
+Max test value: 12.93982
+Mean test value: 5.16085
+Median test value: 5.19433
+Standard deviation of test values: 3.05321
+Average execution time: 25.32102 seconds
+
+
+100 dimensions:
+
+500 population, 425 elites, 300 generations
+
+Epsilon: 0.0001
+Generations: 300
+Pop size: 500
+Mutation p2p: 10
+Crossover prob: 1
+Run 1: rastrigin genetic: 47.20031
+Execution time: 18.41369 seconds
+Run 2: rastrigin genetic: 45.93813
+Execution time: 18.39927 seconds
+Run 3: rastrigin genetic: 24.08061
+Execution time: 18.52953 seconds
+Run 4: rastrigin genetic: 36.35538
+Execution time: 18.60520 seconds
+Run 5: rastrigin genetic: 36.64496
+Execution time: 18.58741 seconds
+Run 6: rastrigin genetic: 37.63792
+Execution time: 18.50142 seconds
+Run 7: rastrigin genetic: 28.39645
+Execution time: 18.99137 seconds
+Run 8: rastrigin genetic: 59.32282
+Execution time: 18.68531 seconds
+Run 9: rastrigin genetic: 44.05878
+Execution time: 18.63860 seconds
+Run 10: rastrigin genetic: 52.80618
+Execution time: 18.55776 seconds
+Run 11: rastrigin genetic: 41.36317
+Execution time: 18.48031 seconds
+Run 12: rastrigin genetic: 62.05833
+Execution time: 18.50720 seconds
+Run 13: rastrigin genetic: 39.61676
+Execution time: 18.49225 seconds
+Run 14: rastrigin genetic: 37.70376
+Execution time: 19.06259 seconds
+Run 15: rastrigin genetic: 21.14894
+Execution time: 18.57498 seconds
+Run 16: rastrigin genetic: 46.16117
+Execution time: 18.61084 seconds
+Run 17: rastrigin genetic: 33.07025
+Execution time: 18.70603 seconds
+Run 18: rastrigin genetic: 59.83255
+Execution time: 18.74727 seconds
+Run 19: rastrigin genetic: 43.92089
+Execution time: 18.79710 seconds
+Run 20: rastrigin genetic: 44.62041
+Execution time: 18.89194 seconds
+Run 21: rastrigin genetic: 28.04933
+Execution time: 18.86114 seconds
+Run 22: rastrigin genetic: 68.70603
+Execution time: 18.74791 seconds
+Run 23: rastrigin genetic: 52.93398
+Execution time: 18.62877 seconds
+Run 24: rastrigin genetic: 17.42299
+Execution time: 18.44350 seconds
+Run 25: rastrigin genetic: 42.87846
+Execution time: 18.35595 seconds
+Run 26: rastrigin genetic: 35.58196
+Execution time: 18.62798 seconds
+Run 27: rastrigin genetic: 29.14080
+Execution time: 18.59210 seconds
+Run 28: rastrigin genetic: 36.86853
+Execution time: 18.67870 seconds
+Run 29: rastrigin genetic: 37.67099
+Execution time: 18.87495 seconds
+Run 30: rastrigin genetic: 35.28582
+Execution time: 18.67516 seconds
+Summary:
+Min test value: 17.42299
+Max test value: 68.70603
+Mean test value: 40.88256
+Median test value: 38.66026
+Standard deviation of test values: 11.87162
+Average execution time: 18.64221 seconds
+Interquartile Range (IQR): 10.87535
+
+100 dimensions:
+
+500 population, 425 elites, 200 generations
+
+Epsilon: 0.0001
+Generations: 200
+Pop size: 500
+Mutation p2p: 10
+Crossover prob: 1
+Run 1: rastrigin genetic: 193.68153
+Execution time: 12.47722 seconds
+Run 2: rastrigin genetic: 230.52335
+Execution time: 12.68676 seconds
+Run 3: rastrigin genetic: 249.09347
+Execution time: 12.72464 seconds
+Run 4: rastrigin genetic: 216.03495
+Execution time: 12.78626 seconds
+Run 5: rastrigin genetic: 260.63530
+Execution time: 13.06675 seconds
+Run 6: rastrigin genetic: 247.23264
+Execution time: 12.61616 seconds
+Run 7: rastrigin genetic: 269.75380
+Execution time: 12.69309 seconds
+Run 8: rastrigin genetic: 221.58858
+Execution time: 12.59675 seconds
+Run 9: rastrigin genetic: 255.61082
+Execution time: 12.45270 seconds
+Run 10: rastrigin genetic: 229.67188
+Execution time: 12.43380 seconds
+Run 11: rastrigin genetic: 181.93029
+Execution time: 12.44151 seconds
+Run 12: rastrigin genetic: 197.99214
+Execution time: 12.41768 seconds
+Run 13: rastrigin genetic: 270.22917
+Execution time: 12.45685 seconds
+Run 14: rastrigin genetic: 206.35011
+Execution time: 12.44466 seconds
+Run 15: rastrigin genetic: 207.91739
+Execution time: 12.46025 seconds
+Run 16: rastrigin genetic: 189.94992
+Execution time: 12.46244 seconds
+Run 17: rastrigin genetic: 231.53098
+Execution time: 13.07749 seconds
+Run 18: rastrigin genetic: 209.74029
+Execution time: 12.57159 seconds
+Run 19: rastrigin genetic: 179.48373
+Execution time: 12.64816 seconds
+Run 20: rastrigin genetic: 138.56118
+Execution time: 12.87088 seconds
+Run 21: rastrigin genetic: 216.57371
+Execution time: 12.51840 seconds
+Run 22: rastrigin genetic: 240.72055
+Execution time: 12.54319 seconds
+Run 23: rastrigin genetic: 189.20203
+Execution time: 12.44784 seconds
+Run 24: rastrigin genetic: 243.62249
+Execution time: 12.45980 seconds
+Run 25: rastrigin genetic: 234.00021
+Execution time: 12.36442 seconds
+Run 26: rastrigin genetic: 252.44083
+Execution time: 12.34401 seconds
+Run 27: rastrigin genetic: 205.92682
+Execution time: 12.35643 seconds
+Run 28: rastrigin genetic: 219.50614
+Execution time: 12.30213 seconds
+Run 29: rastrigin genetic: 209.26965
+Execution time: 12.36910 seconds
+Run 30: rastrigin genetic: 231.20614
+Execution time: 12.68659 seconds
+Summary:
+Min test value: 138.56118
+Max test value: 270.22917
+Mean test value: 220.99934
+Median test value: 220.54736
+Standard deviation of test values: 29.27293
+Average execution time: 12.55925 seconds
+Interquartile Range (IQR): 37.69567
+
+100 dimensions:
+
+500 population, 425 elites, 100 generations
+
+Epsilon: 0.0001
+Generations: 100
+Pop size: 500
+Mutation p2p: 10
+Crossover prob: 1
+Run 1: rastrigin genetic: 618.79105
+Execution time: 6.24944 seconds
+Run 2: rastrigin genetic: 544.36501
+Execution time: 6.28800 seconds
+Run 3: rastrigin genetic: 592.13693
+Execution time: 6.29205 seconds
+Run 4: rastrigin genetic: 607.58773
+Execution time: 6.26981 seconds
+Run 5: rastrigin genetic: 595.11196
+Execution time: 6.28228 seconds
+Run 6: rastrigin genetic: 580.08093
+Execution time: 6.28082 seconds
+Run 7: rastrigin genetic: 602.02421
+Execution time: 6.27614 seconds
+Run 8: rastrigin genetic: 576.76487
+Execution time: 6.39738 seconds
+Run 9: rastrigin genetic: 602.16317
+Execution time: 6.67732 seconds
+Run 10: rastrigin genetic: 576.24932
+Execution time: 6.51881 seconds
+Run 11: rastrigin genetic: 555.90256
+Execution time: 6.45793 seconds
+Run 12: rastrigin genetic: 542.25228
+Execution time: 6.30855 seconds
+Run 13: rastrigin genetic: 593.61191
+Execution time: 6.31830 seconds
+Run 14: rastrigin genetic: 592.35871
+Execution time: 6.51009 seconds
+Run 15: rastrigin genetic: 652.53824
+Execution time: 6.75439 seconds
+Run 16: rastrigin genetic: 594.42475
+Execution time: 6.21221 seconds
+Run 17: rastrigin genetic: 580.43026
+Execution time: 6.56838 seconds
+Run 18: rastrigin genetic: 605.26283
+Execution time: 6.66935 seconds
+Run 19: rastrigin genetic: 612.75880
+Execution time: 6.39884 seconds
+Run 20: rastrigin genetic: 633.88880
+Execution time: 6.05009 seconds
+Run 21: rastrigin genetic: 566.02153
+Execution time: 6.19693 seconds
+Run 22: rastrigin genetic: 584.44373
+Execution time: 6.19093 seconds
+Run 23: rastrigin genetic: 584.17233
+Execution time: 6.41466 seconds
+Run 24: rastrigin genetic: 625.78246
+Execution time: 6.73972 seconds
+Run 25: rastrigin genetic: 570.57019
+Execution time: 6.70224 seconds
+Run 26: rastrigin genetic: 593.24804
+Execution time: 6.64049 seconds
+Run 27: rastrigin genetic: 606.25693
+Execution time: 6.59347 seconds
+Run 28: rastrigin genetic: 586.35495
+Execution time: 6.64883 seconds
+Run 29: rastrigin genetic: 612.30014
+Execution time: 6.43322 seconds
+Run 30: rastrigin genetic: 645.14093
+Execution time: 6.42613 seconds
+Summary:
+Min test value: 542.25228
+Max test value: 652.53824
+Mean test value: 594.43319
+Median test value: 593.42997
+Standard deviation of test values: 25.62625
+Average execution time: 6.42556 seconds
+Interquartile Range (IQR): 27.50680

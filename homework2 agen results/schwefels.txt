@@ -1,0 +1,230 @@
+200 POP, 170 KEPT AS ELITES, 2/L MUTATION
+0.5 SELECTION PRESSURE
+
+30 DIMENSIONS: 
+
+Epsilon: 0.001
+Generations: 200
+Pop size: 200
+Mutation p2p: 2
+Crossover prob: 1
+Run 1: schwefels genetic: -12499.57627
+Execution time: 1.79289 seconds
+Run 2: schwefels genetic: -12488.84552
+Execution time: 1.76880 seconds
+Run 3: schwefels genetic: -12494.43473
+Execution time: 1.78376 seconds
+Run 4: schwefels genetic: -12411.02249
+Execution time: 1.78533 seconds
+Run 5: schwefels genetic: -12501.14151
+Execution time: 1.75492 seconds
+Run 6: schwefels genetic: -12517.87469
+Execution time: 1.75675 seconds
+Run 7: schwefels genetic: -12508.31747
+Execution time: 1.75007 seconds
+Run 8: schwefels genetic: -12517.77236
+Execution time: 1.74897 seconds
+Run 9: schwefels genetic: -12515.46342
+Execution time: 1.74479 seconds
+Run 10: schwefels genetic: -12486.85567
+Execution time: 1.74165 seconds
+Run 11: schwefels genetic: -12525.56986
+Execution time: 1.78762 seconds
+Run 12: schwefels genetic: -12532.39661
+Execution time: 1.75791 seconds
+Run 13: schwefels genetic: -12515.88227
+Execution time: 1.75233 seconds
+Run 14: schwefels genetic: -12421.58365
+Execution time: 1.74944 seconds
+Run 15: schwefels genetic: -12516.31189
+Execution time: 1.74722 seconds
+Run 16: schwefels genetic: -12503.19272
+Execution time: 1.75530 seconds
+Run 17: schwefels genetic: -12437.87045
+Execution time: 1.76039 seconds
+Run 18: schwefels genetic: -12487.72390
+Execution time: 1.74954 seconds
+Run 19: schwefels genetic: -12404.42769
+Execution time: 1.77553 seconds
+Run 20: schwefels genetic: -12509.99016
+Execution time: 1.74666 seconds
+Run 21: schwefels genetic: -12505.83432
+Execution time: 1.74681 seconds
+Run 22: schwefels genetic: -12518.33302
+Execution time: 1.75463 seconds
+Run 23: schwefels genetic: -12491.01517
+Execution time: 1.74775 seconds
+Run 24: schwefels genetic: -12519.59408
+Execution time: 1.78436 seconds
+Run 25: schwefels genetic: -12510.51218
+Execution time: 1.80315 seconds
+Run 26: schwefels genetic: -12463.89545
+Execution time: 1.86871 seconds
+Run 27: schwefels geSummary:
+Min test value: -12532.39661
+Max test value: -12404.42769
+Mean test value: -12491.13136
+Median test value: -12502.16711
+Standard deviation of test values: 33.42110
+Average execution time: 1.76852 seconds
+Interquartile Range (IQR): 30.03230netic: -12485.84998
+Execution time: 1.77816 seconds
+Run 28: schwefels genetic: -12452.05739
+Execution time: 1.79098 seconds
+Run 29: schwefels genetic: -12506.72056
+Execution time: 1.78740 seconds
+Run 30: schwefels genetic: -12483.87546
+Execution time: 1.78392 seconds
+
+
+5 DIMENSIONS:
+
+Epsilon: 0.001
+Generations: 200
+Pop size: 200
+Mutation p2p: 2
+Crossover prob: 1
+Run 1: schwefels genetic: -2094.77638
+Execution time: 0.34840 seconds
+Run 2: schwefels genetic: -2094.77662
+Execution time: 0.34539 seconds
+Run 3: schwefels genetic: -2094.66243
+Execution time: 0.35443 seconds
+Run 4: schwefels genetic: -2094.70526
+Execution time: 0.34156 seconds
+Run 5: schwefels genetic: -2094.69636
+Execution time: 0.34127 seconds
+Run 6: schwefels genetic: -2093.73450
+Execution time: 0.33927 seconds
+Run 7: schwefels genetic: -2094.69341
+Execution time: 0.33765 seconds
+Run 8: schwefels genetic: -2094.72343
+Execution time: 0.33839 seconds
+Run 9: schwefels genetic: -2094.64334
+Execution time: 0.33652 seconds
+Run 10: schwefels genetic: -2094.57203
+Execution time: 0.34078 seconds
+Run 11: schwefels genetic: -2094.80250
+Execution time: 0.33644 seconds
+Run 12: schwefels genetic: -2094.76546
+Execution time: 0.34006 seconds
+Run 13: schwefels genetic: -2094.42268
+Execution time: 0.33983 seconds
+Run 14: schwefels genetic: -2094.69387
+Execution time: 0.36649 seconds
+Run 15: schwefels genetic: -2094.71256
+Execution time: 0.33970 seconds
+Run 16: schwefels genetic: -2094.72931
+Execution time: 0.34113 seconds
+Run 17: schwefels genetic: -2094.80829
+Execution time: 0.35771 seconds
+Run 18: schwefels genetic: -2094.50009
+Execution time: 0.35528 seconds
+Run 19: schwefels genetic: -2092.59193
+Execution time: 0.34386 seconds
+Run 20: schwefels genetic: -2091.94870
+Execution time: 0.34227 seconds
+Run 21: schwefels genetic: -2094.70336
+Execution time: 0.35135 seconds
+Run 22: schwefels genetic: -2094.46306
+Execution time: 0.34262 seconds
+Run 23: schwefels genetic: -2094.60570
+Execution time: 0.33860 seconds
+Run 24: schwefels genetic: -2094.77896
+Execution time: 0.33821 seconds
+Run 25: schwefels genetic: -2094.73686
+Execution time: 0.33777 seconds
+Run 26: schwefels genetic: -2094.79684
+Execution time: 0.33842 seconds
+Run 27: schwefels genetic: -2094.55462
+Execution time: 0.35335 seconds
+Run 28: schwefels genetic: -2094.58024
+Execution time: 0.36892 seconds
+Run 29: schwefels genetic: -2094.71208
+Execution time: 0.35969 seconds
+Run 30: schwefels genetic: -2094.71485
+Execution time: 0.33775 seconds
+Summary:
+Min test value: -2094.80829
+Max test value: -2091.94870
+Mean test value: -2094.48686
+Median test value: -2094.69986
+Standard deviation of test values: 0.62925
+Average execution time: 0.34510 seconds
+Interquartile Range (IQR): 0.16483
+
+10 DIMENSIONS:
+
+Epsilon: 0.001
+Generations: 200
+Pop size: 200
+Mutation p2p: 2
+Crossover prob: 1
+Run 1: schwefels genetic: -4188.13270
+Execution time: 0.65379 seconds
+Run 2: schwefels genetic: -4189.03327
+Execution time: 0.64897 seconds
+Run 3: schwefels genetic: -4186.52401
+Execution time: 0.66276 seconds
+Run 4: schwefels genetic: -4185.78700
+Execution time: 0.63832 seconds
+Run 5: schwefels genetic: -4184.13171
+Execution time: 0.63097 seconds
+Run 6: schwefels genetic: -4189.26914
+Execution time: 0.64123 seconds
+Run 7: schwefels genetic: -4189.37915
+Execution time: 0.63208 seconds
+Run 8: schwefels genetic: -4187.91303
+Execution time: 0.64676 seconds
+Run 9: schwefels genetic: -4188.18117
+Execution time: 0.62808 seconds
+Run 10: schwefels genetic: -4189.06041
+Execution time: 0.63100 seconds
+Run 11: schwefels genetic: -4187.35762
+Execution time: 0.65117 seconds
+Run 12: schwefels genetic: -4187.99012
+Execution time: 0.65662 seconds
+Run 13: schwefels genetic: -4189.18969
+Execution time: 0.65500 seconds
+Run 14: schwefels genetic: -4189.21453
+Execution time: 0.65678 seconds
+Run 15: schwefels genetic: -4189.15379
+Execution time: 0.63731 seconds
+Run 16: schwefels genetic: -4186.67310
+Execution time: 0.65069 seconds
+Run 17: schwefels genetic: -4187.51636
+Execution time: 0.63901 seconds
+Run 18: schwefels genetic: -4189.19110
+Execution time: 0.62961 seconds
+Run 19: schwefels genetic: -4189.28582
+Execution time: 0.64935 seconds
+Run 20: schwefels genetic: -4189.33962
+Execution time: 0.67911 seconds
+Run 21: schwefels genetic: -4189.40001
+Execution time: 0.69239 seconds
+Run 22: schwefels genetic: -4189.05558
+Execution time: 0.63277 seconds
+Run 23: schwefels genetic: -4187.93612
+Execution time: 0.62749 seconds
+Run 24: schwefels genetic: -4189.16433
+Execution time: 0.62706 seconds
+Run 25: schwefels genetic: -4189.02885
+Execution time: 0.63151 seconds
+Run 26: schwefels genetic: -4186.54285
+Execution time: 0.62854 seconds
+Run 27: schwefels genetic: -4180.49877
+Execution time: 0.62860 seconds
+Run 28: schwefels genetic: -4189.06658
+Execution time: 0.63526 seconds
+Run 29: schwefels genetic: -4189.13820
+Execution time: 0.61921 seconds
+Run 30: schwefels genetic: -4189.19351
+Execution time: 0.63289 seconds
+Summary:
+Min test value: -4189.40001
+Max test value: -4180.49877
+Mean test value: -4188.04494
+Median test value: -4189.04443
+Standard deviation of test values: 1.88838
+Average execution time: 0.64248 seconds
+Interquartile Range (IQR): 1.67474

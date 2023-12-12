@@ -1,0 +1,230 @@
+30 DIMENSIONS:
+
+200 pop (160 elites), 200 generations
+to 0.6 selection pressure
+
+Epsilon: 0.001
+Generations: 200
+Pop size: 200
+Mutation p2p: 0.1
+Crossover prob: 1
+Run 1: michalewicz genetic: -28.98273
+Execution time: 1.36924 seconds
+Run 2: michalewicz genetic: -28.71471
+Execution time: 1.34356 seconds
+Run 3: michalewicz genetic: -28.84743
+Execution time: 1.34813 seconds
+Run 4: michalewicz genetic: -28.34397
+Execution time: 1.33470 seconds
+Run 5: michalewicz genetic: -28.90456
+Execution time: 1.38858 seconds
+Run 6: michalewicz genetic: -28.29714
+Execution time: 1.41103 seconds
+Run 7: michalewicz genetic: -28.63261
+Execution time: 1.46833 seconds
+Run 8: michalewicz genetic: -28.82578
+Execution time: 1.44283 seconds
+Run 9: michalewicz genetic: -29.00005
+Execution time: 1.46915 seconds
+Run 10: michalewicz genetic: -28.79553
+Execution time: 1.38181 seconds
+Run 11: michalewicz genetic: -28.52716
+Execution time: 1.39500 seconds
+Run 12: michalewicz genetic: -28.69478
+Execution time: 1.38592 seconds
+Run 13: michalewicz genetic: -28.49625
+Execution time: 1.37350 seconds
+Run 14: michalewicz genetic: -28.87166
+Execution time: 1.37805 seconds
+Run 15: michalewicz genetic: -28.37939
+Execution time: 1.38944 seconds
+Run 16: michalewicz genetic: -28.61142
+Execution time: 1.42046 seconds
+Run 17: michalewicz genetic: -28.95446
+Execution time: 1.38487 seconds
+Run 18: michalewicz genetic: -28.63335
+Execution time: 1.36685 seconds
+Run 19: michalewicz genetic: -28.56238
+Execution time: 1.38478 seconds
+Run 20: michalewicz genetic: -28.79200
+Execution time: 1.38364 seconds
+Run 21: michalewicz genetic: -28.98883
+Execution time: 1.49154 seconds
+Run 22: michalewicz genetic: -28.47849
+Execution time: 1.47894 seconds
+Run 23: michalewicz genetic: -28.78042
+Execution time: 1.39040 seconds
+Run 24: michalewicz genetic: -29.14783
+Execution time: 1.47527 seconds
+Run 25: michalewicz genetic: -28.46723
+Execution time: 1.47209 seconds
+Run 26: michalewicz genetic: -28.93190
+Execution time: 1.44520 seconds
+Run 27: michalewicz genetic: -28.70810
+Execution time: 1.42626 seconds
+Run 28: michalewicz genetic: -28.79469
+Execution time: 1.46558 seconds
+Run 29: michalewicz genetic: -28.75793
+Execution time: 1.40870 seconds
+Run 30: michalewicz genetic: -28.89083
+Execution time: 1.36268 seconds
+Summary:
+Min test value: -29.14783
+Max test value: -28.29714
+Mean test value: -28.72712
+Median test value: -28.76918
+Standard deviation of test values: 0.21092
+Average execution time: 1.40788 seconds
+Interquartile Range (IQR): 0.32845
+
+5 DIMENSIONS:
+
+Epsilon: 0.001
+Generations: 200
+Pop size: 200
+Mutation p2p: 0.1
+Crossover prob: 1
+Run 1: michalewicz genetic: -4.68761
+Execution time: 0.31283 seconds
+Run 2: michalewicz genetic: -4.68243
+Execution time: 0.30023 seconds
+Run 3: michalewicz genetic: -4.65970
+Execution time: 0.29874 seconds
+Run 4: michalewicz genetic: -4.68516
+Execution time: 0.29831 seconds
+Run 5: michalewicz genetic: -4.67932
+Execution time: 0.30368 seconds
+Run 6: michalewicz genetic: -4.68761
+Execution time: 0.30330 seconds
+Run 7: michalewicz genetic: -4.68713
+Execution time: 0.30115 seconds
+Run 8: michalewicz genetic: -4.68761
+Execution time: 0.31417 seconds
+Run 9: michalewicz genetic: -4.68538
+Execution time: 0.30220 seconds
+Run 10: michalewicz genetic: -4.68739
+Execution time: 0.30591 seconds
+Run 11: michalewicz genetic: -4.68691
+Execution time: 0.30017 seconds
+Run 12: michalewicz genetic: -4.68761
+Execution time: 0.29956 seconds
+Run 13: michalewicz genetic: -4.68761
+Execution time: 0.30393 seconds
+Run 14: michalewicz genetic: -4.68761
+Execution time: 0.30096 seconds
+Run 15: michalewicz genetic: -4.64716
+Execution time: 0.31437 seconds
+Run 16: michalewicz genetic: -4.68761
+Execution time: 0.31119 seconds
+Run 17: michalewicz genetic: -4.68757
+Execution time: 0.32066 seconds
+Run 18: michalewicz genetic: -4.68757
+Execution time: 0.32267 seconds
+Run 19: michalewicz genetic: -4.68761
+Execution time: 0.30954 seconds
+Run 20: michalewicz genetic: -4.68761
+Execution time: 0.30126 seconds
+Run 21: michalewicz genetic: -4.66448
+Execution time: 0.29735 seconds
+Run 22: michalewicz genetic: -4.68274
+Execution time: 0.30097 seconds
+Run 23: michalewicz genetic: -4.68538
+Execution time: 0.30311 seconds
+Run 24: michalewicz genetic: -4.68105
+Execution time: 0.30596 seconds
+Run 25: michalewicz genetic: -4.67664
+Execution time: 0.29651 seconds
+Run 26: michalewicz genetic: -4.68516
+Execution time: 0.29633 seconds
+Run 27: michalewicz genetic: -4.65274
+Execution time: 0.29486 seconds
+Run 28: michalewicz genetic: -4.63899
+Execution time: 0.29824 seconds
+Run 29: michalewicz genetic: -4.66494
+Execution time: 0.30450 seconds
+Run 30: michalewicz genetic: -4.64586
+Execution time: 0.30477 seconds
+Summary:
+Min test value: -4.68761
+Max test value: -4.63899
+Mean test value: -4.67807
+Median test value: -4.68538
+Standard deviation of test values: 0.01456
+Average execution time: 0.30425 seconds
+Interquartile Range (IQR): 0.01096
+
+10 DIMENSIONS:
+
+Epsilon: 0.001
+Generations: 200
+Pop size: 200
+Mutation p2p: 0.1
+Crossover prob: 1
+Run 1: michalewicz genetic: -9.65249
+Execution time: 0.52135 seconds
+Run 2: michalewicz genetic: -9.49698
+Execution time: 0.50658 seconds
+Run 3: michalewicz genetic: -9.64769
+Execution time: 0.50600 seconds
+Run 4: michalewicz genetic: -9.61236
+Execution time: 0.51481 seconds
+Run 5: michalewicz genetic: -9.65749
+Execution time: 0.50742 seconds
+Run 6: michalewicz genetic: -9.55158
+Execution time: 0.51082 seconds
+Run 7: michalewicz genetic: -9.59698
+Execution time: 0.51293 seconds
+Run 8: michalewicz genetic: -9.57229
+Execution time: 0.54058 seconds
+Run 9: michalewicz genetic: -9.65808
+Execution time: 0.52352 seconds
+Run 10: michalewicz genetic: -9.63880
+Execution time: 0.51804 seconds
+Run 11: michalewicz genetic: -9.57917
+Execution time: 0.50842 seconds
+Run 12: michalewicz genetic: -9.65456
+Execution time: 0.51249 seconds
+Run 13: michalewicz genetic: -9.61673
+Execution time: 0.50414 seconds
+Run 14: michalewicz genetic: -9.56608
+Execution time: 0.51298 seconds
+Run 15: michalewicz genetic: -9.60437
+Execution time: 0.51050 seconds
+Run 16: michalewicz genetic: -9.54386
+Execution time: 0.50858 seconds
+Run 17: michalewicz genetic: -9.65838
+Execution time: 0.50738 seconds
+Run 18: michalewicz genetic: -9.60959
+Execution time: 0.51118 seconds
+Run 19: michalewicz genetic: -9.61435
+Execution time: 0.52147 seconds
+Run 20: michalewicz genetic: -9.62203
+Execution time: 0.50855 seconds
+Run 21: michalewicz genetic: -9.46019
+Execution time: 0.50623 seconds
+Run 22: michalewicz genetic: -9.59492
+Execution time: 0.50973 seconds
+Run 23: michalewicz genetic: -9.61801
+Execution time: 0.50837 seconds
+Run 24: michalewicz genetic: -9.54876
+Execution time: 0.51705 seconds
+Run 25: michalewicz genetic: -9.60869
+Execution time: 0.51037 seconds
+Run 26: michalewicz genetic: -9.65972
+Execution time: 0.51538 seconds
+Run 27: michalewicz genetic: -9.49361
+Execution time: 0.51717 seconds
+Run 28: michalewicz genetic: -9.57539
+Execution time: 0.50984 seconds
+Run 29: michalewicz genetic: -9.65109
+Execution time: 0.50855 seconds
+Run 30: michalewicz genetic: -9.53485
+Execution time: 0.50302 seconds
+Summary:
+Min test value: -9.65972
+Max test value: -9.46019
+Mean test value: -9.59664
+Median test value: -9.60914
+Standard deviation of test values: 0.05289
+Average execution time: 0.51245 seconds
+Interquartile Range (IQR): 0.08161
