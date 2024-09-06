@@ -90,23 +90,3 @@ int main() {
 
     return 0;
 }
-
-/*std::vector<std::vector<bool>> test = generate_population(population_size, interval_start, interval_end, epsilon, number_of_dimensions);
-
-    int x {1};
-    for (const auto& i : test) {
-
-        for (auto ii : i) {
-            std::cout << ii;
-        }
-        std::cout << " This was chromosome " << x++;
-        std::cout << std::endl;
-    }
-
-    x = 1;
-    std::vector<double> test_v = evaluate_population(test, interval_start, interval_end, epsilon, number_of_dimensions, rastrigins_function);
-    for (const auto& i : test_v) {
-        std::cout << "Chromosome " << x++ << " value: "<< i << std::endl;
-    }
-}
-*/
